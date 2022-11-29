@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="Css/icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;
+    0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,
+    900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+
+</head>
+
+<body>
+    <div class="dashboard">
+        <!---Dashboard-->
+
+        <section class="navigation">
+            <!---Navigation-->
+            <img src="images/logo.jpg" alt="InstinctHub Logo" class="logo">
+
+            <div>
+                <span class="material-icons-outlined">dashboard</span>
+                <span class="material-icons-outlined">trending_up</span>
+                <span class="material-icons-outlined">people</span>
+                <span class="material-icons-outlined">insert_invitation</span>
+                <span class="material-icons-outlined">settings_suggest</span>
+
+            </div>
+
+            <img src="images/9.JPG" alt="User Image" class="user">
+        </section>
+        <!---Navigation end-->
+
+        <section class="main">
+            <!---Main-->
+            <div class="search">
+                <!--search-->
+                <form action="">
+                    <input type="text" name="search" id="search" placeholder="Search Here">
+                    <span class="material-icons-outlined">search</span>
+                </form>
+
+                <div class="notification">
+                    <span class="material-icons-outlined">notifications</span>
+                    <span class="material-icons-outlined">edit</span>
+                </div>
+            </div>
+            <!--Search End-->
+
+            <div class="title">
+                <h1> My Project</h1>
+                <form action="#">
+                    <label for="project">Sort By</label>
+                    <select name="project" id="project">
+                        <option value="Recent">Recent Project</option>
+                        <option value="Finished">Finished Project</option>
+                        <option value="Ongoing">Ongoing Project</option>
+                        <option value="Stored">Stored Project</option>
+
+                    </select>
+                </form>
+            </div>
+
+            <div class="project_list">
+                <!--project list-->
+
+                <div class="project">
+                    <!--project 1-->
+                    <div class="category category_color1"></div>
+                    <h2>Graphic Design</h2>
+                    <p>Active recently</p>
+
+                    <ul class="activivty">
+                        <li>Coming soon Banner</li>
+                        <li>Book cover</li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="images/1.JPG" alt="" class="stack">
+                            <img src="images/2.JPG" alt="" class="stack">
+                            <img src="images/3.JPG" alt="" class="stack">
+                            <span class="material-icons-outlined">more_vert</span>
+                        </div>
+                    </div>
+                </div>
+                <!--project 1 End-->
+
+                <div class="project">
+                    <!--project 2-->
+                    <div class="category"></div>
+                    <h2>Magazine</h2>
+                    <p>1 hour ago</p>
+
+                    <ul class="activivty">
+                        <li>Editorial page content</li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="images/4.JPG" alt="" class="stack">
+                            <img src="images/5.JPG" alt="" class="stack">
+                            <span class="material-icons-outlined">more_vert</span>
+                        </div>
+                    </div>
+                </div>
+                <!--project 2 End-->
+
+                <div class="project">
+                    <!--project 3-->
+                    <div class="category category_color3"></div>
+
+                    <h2>Layouting</h2>
+                    <p>1 day ago</p>
+
+
+                    <ul class="activivty">
+                        <li>Fixed layput on page ads</li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="images/6.JPG" alt="" class="stack">
+                            <span class="material-icons-outlined">more_vert</span>
+                        </div>
+                    </div>
+                </div>
+                <!--project 3 End-->
+
+                <div class="project">
+                    <!--project 4-->
+                    <div class="category category_color4"></div>
+
+                    <h2>Branding</h2>
+                    <p>3 day ago</p>
+
+                    <ul class="activivty">
+                        <li>Brainstorming shapes</li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="images/7.JPG" alt="" class="stack">
+                            <span class="material-icons-outlined">more_vert</span>
+                        </div>
+                    </div>
+                </div>
+                <!--project 4 End-->
+
+                <div class="project">
+                    <!--project 5-->
+                    <div class="category category_color2"></div>
+
+                    <h2>Guidlines </h2>
+                    <p>5 day ago</p>
+
+                    <ul class="activivty">
+                        <li>Make brand guidelines for marked cosmetics</li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="images/8.JPG" alt="" class="stack">
+                            <img src="images/2.JPG" alt="" class="stack">
+                            <span class="material-icons-outlined">more_vert</span>
+                        </div>
+                    </div>
+                </div>
+                <!--project 5 End-->
+
+                <div class="project">
+                    <!--project 6-->
+                    <div class="category category_color3"></div>
+
+                    <h2>Photoshoot </h2>
+                    <p>1 week ago</p>
+
+                    <ul class="activivty">
+                        <li>Get the photo ready for magazine</li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="images/5.JPG" alt="" class="stack">
+                            <img src="images/6.JPG" alt="" class="stack">
+                            <img src="images/1.JPG" alt="" class="stack">
+                            <span class="material-icons-outlined">more_vert
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <!--project 6 End-->
+
+
+            </div>
+            <!--project list End-->
+
+        </section>
+        <!---Main end-->
+
+        <section class="secondary">
+            <!---Secondary-->
+            <div class="chart">
+                <h2>Total Project</h2>
+                <canvas id="myChart" width="400" height="400"></canvas>
+                <div class="complete">
+                    <h3>3 Completed</h3>
+                    <p>from 5 project</p>
+                </div>
+            </div>
+
+            <div class="recent_project">
+                <!---Recent Project-->
+                <div class="listing">
+                    <div class="title">
+                        <div class="category category_color1"></div>
+                        <h2>Layouting</h2>
+                        <p>by Noah</p>
+                    </div>
+                    <span class="material-icons-outlined">more_vert</span>
+                </div>
+
+                <div class="listing">
+                    <div class="title">
+                        <div class="category category_color2"></div>
+                        <h2>Photoshoot</h2>
+                        <p>by Asabuodu Onochie</p>
+                    </div>
+                    <span class="material-icons-outlined">more_vert</span>
+                </div>
+
+                <div class="listing">
+                    <div class="title">
+                        <div class="category category_color3"></div>
+                        <h2>Branding</h2>
+                        <p>by Akinshola Samuel</p>
+                    </div>
+                    <span class="material-icons-outlined">more_vert</span>
+                </div>
+
+                <div class="listing">
+                    <div class="title">
+                        <div class="category category_color4"></div>
+                        <h2>Graphics Design</h2>
+                        <p>by Mathew Kelechi</p>
+                    </div>
+                    <span class="material-icons-outlined">more_vert</span>
+                </div>
+
+                <!---Recent_Project End-->
+
+        </section>
+        <!---Secondary end-->
+
+        </div>
+        <!---Dashboard--end-->
+
+
+        <script src="js/script.js">
+        </script>
+</body>
+
+</html>
